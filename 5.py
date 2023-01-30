@@ -1,7 +1,7 @@
 
 """
 Step 1 - Create a list and ask for the user to input some numbers.
-Step 2 - Organize them in ascending order and separete them in 2 lists (one for odd number and other for even numbers) as soon as they are added to the list
+Step 2 - Separete them in 2 lists (one for odd number and other for even numbers) automatically.
 """
 
 lista_even=[]

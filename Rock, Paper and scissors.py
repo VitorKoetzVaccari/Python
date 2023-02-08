@@ -23,4 +23,5 @@ print("Computer: " + lista[z])
 
 #Comparison
 if z==x:
-    print("Tie"
+    print("Tie")
+    print("vitor")

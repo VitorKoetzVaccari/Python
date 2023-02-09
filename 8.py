@@ -11,7 +11,6 @@ while True:
     print("try " + str(c) + ": " + str(z))
     c+=1
     if x==z:
-        print("try " + str(c) + ": " + str(z))
         break
     else:
         continue

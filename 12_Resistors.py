@@ -13,21 +13,27 @@ while True:
     try:
         i=1 
         while i<=howmany:
+
             value=int(input("Resistor "+ str(i) + " value: "))
             resistor.append(value)
             print(resistor)
             
-            '''if i>1:
+            if i==1:
+                i+=1  
+            else: 
                 connection=input("series (s) or parallel (p)?")
                 if connection == "s":
-                    print("series")
-                    break
+                    print(sum(resistor))
+                    i+=1
+                elif connection == "p":
+                    print("parallel")
+                    i+=1
                 else:
-                    print("erered ")
-                    break
-            else:
-                continue
-'''
+                    print("wrong value")
+                    resistor.pop(i)
+                    continue
+                    
+        break
     except:
         print("Value not accepted ")               
              

@@ -11,32 +11,31 @@ while True:
 
 while True:
     try:
-        i=1 
-        while i<=howmany:
-
-            value=int(input("Resistor "+ str(i) + " value: "))
+        i=0 
+        while i<howmany: 
+            value=int(input("Resistor "+ str(i+1) + " value: "))
             resistor.append(value)
             print(resistor)
             
-            if i==1:
+            if i==0:
+                R_eq=resistor[0]
+                print("R_Eq: " + str(R_eq))
                 i+=1  
             else: 
                 connection=input("series (s) or parallel (p)?")
                 if connection == "s":
-                    print(sum(resistor))
+                    R_eq=R_eq+value
+                    print("R_Eq: " + str(R_eq))
                     i+=1
                 elif connection == "p":
                     print("parallel")
                     i+=1
                 else:
-                    print("wrong value")
+                    print("Try again")
                     resistor.pop(i)
                     continue
-                    
-        break
     except:
-        print("Value not accepted ")               
-             
+        print("Value not accepted ")
        
 
         

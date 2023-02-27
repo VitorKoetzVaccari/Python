@@ -1,20 +1,19 @@
 import matplotlib.pyplot as plt
 
-dominio=[2,3]
-imagem=[5,6]
-'''
-i=0
+D=[]
+Im=[]
+O=[0,0]
+Y=[0,100]
+X=[100,0]
+
+plt.plot(Y,O)
+plt.plot(O,X)
+i=-10
 while i<10:
-    y=i**2
-    dominio.append(i)
-    imagem.append(y)
-    plt.plot(dominio,imagem)
+    y=i**2+i-6
+    D.append(i)
+    Im.append(y)
+    plt.plot(D,Im)
     i+=1
-    if y==0:
-        print(i,y)
-    else:
-        continue
-    '''
-plt.plot(5)
 
 plt.show()

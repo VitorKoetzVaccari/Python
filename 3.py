@@ -1,27 +1,27 @@
+import time
 
-"""
+print("""
 Step 1 - Create a list and ask for the user how many items (only numbers) it will have.
 Step 2 - Ask for numbers.
 Step 3 - Organize those numbers in ascending order.
-"""
+""")
 
-#Step 1
+print("Step 1\n")
 lista=[]
 while True:
     try:
-        nbr=int(input("choose how many number the list will have: "))
+        nbr=int(input("Choose how many number the list will have: "))
         break
     except:
-        print("wrong value")
+        print("Dude, u gotta choose an number ... Try again")
 
-
-#Step 2
+print("\nStep 2\n")
 while True:
     i=0
     while i<nbr:
         try:
             p=str(i+1)
-            x=int(input("choose number " + p + ": "))
+            x=int(input("Choose number " + p +": "))
             lista.insert(i,x)
             print(lista)
             i+=1
@@ -30,7 +30,7 @@ while True:
     break
   
   
-#Step 3
+print("Step 3")
 a=0
 while a<nbr:
     b=0
@@ -38,9 +38,11 @@ while a<nbr:
         if b>a and lista[b]<lista[a]:
             lista.insert(a, lista[b])
             lista.pop(b+1)
-            print(lista)
             b+=1
         else:
-            print(lista)
             b+=1
     a+=1
+
+print("Step 3\n\n")
+print(lista)
+time.sleep(200)

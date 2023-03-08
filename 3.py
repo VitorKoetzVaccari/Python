@@ -6,7 +6,7 @@ Step 2 - Ask for numbers.
 Step 3 - Organize those numbers in ascending order.
 """)
 
-print("Step 1\n")
+print("--- Step 1 ---\n")
 lista=[]
 while True:
     try:
@@ -15,13 +15,13 @@ while True:
     except:
         print("Dude, u gotta choose an number ... Try again")
 
-print("\nStep 2\n")
+print("\n--- Step 2 ---")
 while True:
     i=0
     while i<nbr:
         try:
             p=str(i+1)
-            x=int(input("Choose number " + p +": "))
+            x=int(input("\nChoose number " + p +": "))
             lista.insert(i,x)
             print(lista)
             i+=1
@@ -30,7 +30,7 @@ while True:
     break
   
   
-print("Step 3")
+print("\n--- Step 3 ---")
 a=0
 while a<nbr:
     b=0
@@ -43,6 +43,5 @@ while a<nbr:
             b+=1
     a+=1
 
-print("Step 3\n\n")
 print(lista)
 time.sleep(200)

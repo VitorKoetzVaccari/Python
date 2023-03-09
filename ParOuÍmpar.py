@@ -8,7 +8,7 @@ while True:
         print("\nYou ("+ user_choice + ") x "+ "Computer (Odd)")
         break
     elif user_choice == "odd":
-        print("\nYou: " + user_choice + " x Computer: Even")
+        print("\nYou ("+ user_choice + ") x "+ "Computer (Even)")
         break
     else:
         print("\nValue not accepted. Try again.")

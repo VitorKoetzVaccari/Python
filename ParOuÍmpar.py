@@ -1,39 +1,38 @@
 import random
+import time
 
 #Odd oe even?
 while True:
-    user_choice=input("choose between odd and even: ")
+    user_choice=input("Choose between odd and even: ")
     if user_choice == "even":
-        print("U chose: ", user_choice)
-        print("Computer chose: odd")
+        print("\nYou ("+ user_choice + ") x "+ "Computer (Odd)")
         break
-
     elif user_choice == "odd":
-        print("U chose: ", user_choice)
-        print("Computer chose: even")
-        
+        print("\nYou: " + user_choice + " x Computer: Even")
         break
     else:
-        print("Value not accepted.")
+        print("\nValue not accepted. Try again.")
 
 #User_number
 while True:
     try:
-        user_number=int(input("choose a number: "))
-        print("User number: ", user_number)
+        user_number=int(input("\nChoose a number: "))
+        print("\nUser number: ", user_number)
         break
     except:
-        print("Value not accepted.")
+        print("\nValue not accepted.")
 
 #Computer_nubmer
 computer_number=random.randint(0,10)
-print("Computer chose: ",computer_number)
+print("\nComputer chose: ",computer_number)
 
 #Sum
 sum = computer_number + user_number
-print("the sum is: ", sum)
+print("\nThe sum is: ", sum)
 
 if (sum%2)==0:
-    print("User won!")
+    print("\nUser won!")
 else:
-    print("Computer won!")
+    print("\nComputer won!")
+
+time.sleep(200)
